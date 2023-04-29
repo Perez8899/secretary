@@ -12,7 +12,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories = DB::table('categories')->orderBy('name')->limit(3)->get();
+        //$categories = DB::table('categories')->orderBy('name')->limit(3)->get();
 
         $categories = Category::all();
         return view('categories.index', compact('categories'));
