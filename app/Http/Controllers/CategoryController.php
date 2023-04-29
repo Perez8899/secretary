@@ -27,9 +27,10 @@ class CategoryController extends Controller
     */
     public function showOptions($id)
     {
+        $category = Category::find($id);
         $options = DB::table('options')->where('category_id', $id)->orderBy('name')->limit(3)->get();
 
-        return view('options', ['options' => $options]);
+        return view('categories.options', ['options' => $options]);
     }
 
 }

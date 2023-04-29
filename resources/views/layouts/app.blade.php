@@ -27,8 +27,6 @@
            rounded px-4 pt-1 h-10 bg-white text-blue-500 font-semibold mx-2">
            Categories</a> 
        
-      <a href="" class="text-white rounded px-4 pt-1 h-10 bg-green-500
-           font-semibold mx-2 hover:bg-green-600">Create</a>
    </nav>
   
   <main class="p-16 flex justify-center">

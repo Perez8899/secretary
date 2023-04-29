@@ -22,4 +22,4 @@ Route::get('/categories', 'App\Http\Controllers\CategoryController@index');
 //Route::get('/', 'CategoryController@index');
 Route::get('/category/{id}', 'CategoryController@showOptions');
 Route::get('/categories/{id}/options', [CategoryController::class, 'showOptions'])->name('categories.options'); //categories.options
-Route::get('/options/{id}/suboptions', [OptionController::class, 'showSuboptions'])->name('option.suboptions');
+Route::get('/options/{id}/suboptions', [OptionController::class, 'showSuboptions'])->name('categories.suboptions'); //'option.suboptions'
