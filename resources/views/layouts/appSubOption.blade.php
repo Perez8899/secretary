@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@yield('title') - Categories App</title>
+    <title>@yield('title') - Sub App</title>
     
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" 
@@ -15,7 +15,7 @@
  
   </head>
   <body class="bg-gray-100 text-gray-800">
-  
+   
   <main class="p-16 flex justify-center">
     @yield('content')
   </main>
