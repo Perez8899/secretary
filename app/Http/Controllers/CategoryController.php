@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Option;
 use Illuminate\Support\Facades\DB;
+use App\Models\Available;
 
 
 class CategoryController extends Controller
@@ -13,8 +14,15 @@ class CategoryController extends Controller
     public function index()
     {
 
-        $categories = Category::all();
-        return view('categories.index', compact('categories'));
+        $showCategories = Available::where('config', true)->first();
+
+        if ($showCategories) {
+            $categories = Category::all();
+            return view('categories.index', compact('categories'));
+        } else {
+            return view('categories.available');
+        }
+
     }
 
 
