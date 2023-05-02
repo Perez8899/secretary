@@ -15,15 +15,8 @@
  
   </head>
   <body class="bg-gray-100 text-gray-800">
-   <!-- Navigation menu-->
-   <nav class="h-16 flex justify-end py-4 px-16">
-
-    <!-- we get the name of CategoriesController to take us to the categories route route('categories.options', ['id' => $category->id])-->
-    
-      
-       
-   </nav>
-  
+   <!-- Navigation menu--> 
+         
   <main class="p-16 flex justify-center">
     @yield('content')
   </main>
