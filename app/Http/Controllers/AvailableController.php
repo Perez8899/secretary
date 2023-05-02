@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 
 class AvailableController extends Controller
 {
+    //show unavailable secretary view
     public function showAvailable(Request $request)
     {
-       
+
         return view('categories.available');
     }
 }

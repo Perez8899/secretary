@@ -14,12 +14,14 @@ class CategoryController extends Controller
     public function index()
     {
 
+        //we store the result of the table query by means of the model,
+        //where the field value is equal to true
         $showCategories = Available::where('config', true)->first();
 
-        if ($showCategories) {
+        if ($showCategories) { //if the value is true show the view
             $categories = Category::all();
             return view('categories.index', compact('categories'));
-        } else {
+        } else { //if the value is false show the available view
             return view('categories.available');
         }
 
