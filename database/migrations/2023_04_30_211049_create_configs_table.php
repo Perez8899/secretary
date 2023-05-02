@@ -10,6 +10,7 @@ return new class extends Migration {
      */
     public function up(): void
     {
+        //table to enable or disable the virtual secretary
         Schema::create('configs', function (Blueprint $table) {
             $table->id();
             $table->boolean('config')->default(false);

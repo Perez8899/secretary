@@ -10,6 +10,7 @@ class OptionController extends Controller
 {
     public function showSuboptions($id)
     {
+        //if you click on an option it will send to the view of suboptions according to its id
         $option = Option::findOrFail($id);
         $suboptions = DB::table('suboptions')->where('option_id', $id)->get();
 

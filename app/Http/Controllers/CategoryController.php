@@ -30,6 +30,7 @@ class CategoryController extends Controller
 
     public function showOptions($id)
     {
+        //if you click on a category it sends me to the options view according to the relationship with the id----
         $options = DB::table('options')->where('category_id', $id)->orderBy('name')->limit(3)->get();
 
         return view('categories.options', ['options' => $options]);
