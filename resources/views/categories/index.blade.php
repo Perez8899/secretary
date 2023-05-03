@@ -5,7 +5,7 @@
 
     <img src="{{ asset('images/secretary.png')}}" alt="images">
     <h1 class="text-blue-700 text-2x1 font-bold">Categories</h1> <br>
-    <p>Please select the information you want: </p>
+    <p>Hello! Please select the information you want: </p>
          
     <hr>
     <br>
